@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class VRInput : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
+    bool isSetUp;
 
-    void Update()
+    public void SetUp ()
     {
-        
+        isSetUp = true;
     }
 }

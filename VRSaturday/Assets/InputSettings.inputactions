@@ -382,6 +382,54 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "TrackPadPosition",
+                    "type": "Value",
+                    "id": "2c846eb6-0344-40cc-b0da-c2094128a5b3",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "TrackPadPress",
+                    "type": "Button",
+                    "id": "3e1b84ee-209c-4b7e-a9ff-a27723c2e103",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LeftVelocity",
+                    "type": "Value",
+                    "id": "b00e53f7-9f14-4511-8f4c-fa9f82964a3f",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LeftAngularVelocity",
+                    "type": "Value",
+                    "id": "2c2ea643-ba0b-438f-9d0b-6d12f72941ff",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightVelocity",
+                    "type": "Value",
+                    "id": "ed02a2cd-b4c5-4708-9a0e-5649c369a9a4",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightAngularVelocity",
+                    "type": "Value",
+                    "id": "b76be70d-df5c-473a-a2be-c14147c95c8a",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -470,6 +518,94 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f59b070b-b3f6-4b9a-be9d-55029879c650",
+                    "path": "<XRController>/touchpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "TrackPadPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c671f5ec-afc1-4198-940f-30a65be6f8a2",
+                    "path": "<OculusTouchController>/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "TrackPadPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9b3883e7-48f3-419e-9cde-8ac2044c7d85",
+                    "path": "<ViveWand>/trackpadPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "TrackPadPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0106637f-f857-4b22-a365-2960a496f546",
+                    "path": "<OculusTouchController>/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "TrackPadPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c1350c85-b951-45c5-afee-b6391330daaf",
+                    "path": "<XRController>{LeftHand}/deviceVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "LeftVelocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b6f13343-3dcd-4721-8d36-2d4891718237",
+                    "path": "<XRController>{LeftHand}/deviceAngularVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "LeftAngularVelocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f49adad-ed6e-4011-beba-ecab3335e0db",
+                    "path": "<XRController>{RightHand}/deviceVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "RightVelocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e7e820e5-c199-4720-a298-7b1efdec0c85",
+                    "path": "<XRController>{RightHand}/deviceAngularVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "RightAngularVelocity",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

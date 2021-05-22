@@ -17,10 +17,28 @@ public class VRPose : MonoBehaviour
     public InputActionReference positionAction;
     public InputActionReference rotationAction;
 
-    void FixedUpdate()
+    bool isSetup;
+
+    public void SetUp ()
     {
-        
+        isSetup = true;
     }
 
-    
+    void FixedUpdate()
+    {
+        if (!isSetup)
+            return;
+
+        PoseTransform pose = GetPose();
+        transform.position = pose.position;
+        transform.rotation = pose.rotation;
+    }
+
+    PoseTransform GetPose ()
+    {
+        PoseTransform pose = new PoseTransform();
+        pose.position = positionAction.action.ReadValue<Vector3>();
+        pose.rotation = rotationAction.action.ReadValue<Quaternion>();
+        return pose;
+    }
 }
