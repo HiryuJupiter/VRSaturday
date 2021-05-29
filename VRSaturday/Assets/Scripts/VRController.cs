@@ -24,7 +24,7 @@ public class VRController : MonoBehaviour
 
         input = GetComponent<VRInput>();
         pose = GetComponent<VRPose>();
-        input.SetUp();
+        input.Setup();
         pose.SetUp();
     }
 

@@ -8,6 +8,7 @@ public class VRRig : MonoBehaviour
     public VRController left;
     public VRController right;
     public VRPose HMD;
+    public Transform PlayArea;
 
     void Start()
     {
